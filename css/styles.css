@@ -134,7 +134,6 @@ img {
   color: var(--valhalla-color);
   display: block;
   padding: 24px 0;
-  transition: color var(--transition) cubic-bezier(0.4, 0, 0.2, 1) linear;
 }
 
 .header-menu-link:hover,
@@ -169,6 +168,7 @@ img {
 
 .heder-logo {
   margin-right: 76px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -193,7 +193,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--gun-powder-color);
-  transition: color var(--transition) cubic-bezier(0.4, 0, 0.2, 1) linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /********************************* section hero **********************************/
@@ -342,15 +342,12 @@ img {
   padding: 32px 16px 8px;
 }
 
-.social-icons-block {
-  padding: 32px 0;
-}
-
 .social-icons-list {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
+  padding: 32px 0;
 }
 
 .social-icons-item {
