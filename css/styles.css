@@ -206,9 +206,10 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-bg.jpg);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
+  background-size: cover;
 }
 
 .hero-container {
@@ -233,6 +234,7 @@ img {
   color: var(--white-color);
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color var(--transition);
 }
 /********************************* section strategy **********************************/
 .visually-hidden {
