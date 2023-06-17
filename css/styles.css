@@ -170,6 +170,7 @@ img {
 
 .heder-logo {
   margin-right: 76px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -532,6 +533,7 @@ img {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .content-item {
