@@ -562,8 +562,15 @@ img {
 }
 
 .portfolio-cover {
-  position: relative;
   overflow: hidden;
+  position: absolute;
+  background-color: var(--royal-blue-color);
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .portfolio-cover-block {
@@ -589,8 +596,6 @@ img {
   height: 100%;
   width: 100%;
   padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
