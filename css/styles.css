@@ -116,6 +116,7 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu {
@@ -168,7 +169,6 @@ img {
 
 .heder-logo {
   margin-right: 76px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -339,7 +339,7 @@ img {
 }
 
 .card {
-  padding: 32px 16px 8px;
+  padding: 32px 0;
 }
 
 .social-icons-list {
@@ -348,6 +348,7 @@ img {
   align-items: center;
   justify-content: center;
   padding: 32px 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-item {
@@ -366,7 +367,7 @@ img {
 }
 
 .social-icons-link:is(:hover, :focus) {
-  background-color: #31d0aa;
+  background-color: var(--free-speech-blue);
 }
 
 .social-icons {
@@ -436,8 +437,8 @@ img {
 
 .customers-link:hover,
 .customers-link:focus {
+  color: var(--free-speech-blue);
   border-color: var(--free-speech-blue);
-  background-color: var(--dark-grayish-blue);
 }
 
 .customers-icons {
@@ -525,27 +526,28 @@ img {
   gap: 48px 24px;
   flex-wrap: wrap;
 }
-.list {
-}
+
 .content-item {
   width: calc((100% - 48px) / 3);
 }
 .content-link {
   border-bottom: 1px solid var(--border-color);
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .content-link:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.content-item:hover .portfolio-cover-block {
-  transform: translate(0);
-}
 
 .btn-portfolio {
   border: 1px solid var(--border-color);
   padding: 12px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio:hover,
@@ -563,27 +565,12 @@ img {
 
 .portfolio-cover {
   overflow: hidden;
-  position: absolute;
-  background-color: var(--royal-blue-color);
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
-/* .portfolio-cover-block {
-  position: absolute;
-  background-color: var(--royal-blue-color);
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 40px 32px;
-  transform: translateY(100%);
-  transition: transform var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
+.content-link:is(:hover, :focus) .portfolio-cover-text {
+  transform: translateY(0%);
+}
 .portfolio-cover-text {
   font-size: 16px;
   line-height: 1.5;
@@ -596,6 +583,8 @@ img {
   height: 100%;
   width: 100%;
   padding: 40px 32px;
+  transform: translateY(100%);
+  transition: transform var(--transition) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -655,6 +644,7 @@ img {
   border-radius: 50%;
   width: 8px;
   height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
