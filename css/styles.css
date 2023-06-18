@@ -154,7 +154,6 @@ img {
   position: absolute;
   left: 0;
   bottom: -1px;
-  top: 44px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -350,7 +349,6 @@ img {
   gap: 24px;
   align-items: center;
   justify-content: center;
-  padding: 32px 0;
 }
 
 .social-icons-item {
@@ -390,6 +388,7 @@ img {
   color: var(--valhalla-color);
 }
 .team-descr {
+  padding-bottom: 8px;
 }
 
 /********************************* section customers **********************************/
@@ -649,7 +648,7 @@ img {
 }
 
 .modal-icon {
-  background: var(--border-color);
+  fill: var(--border-color);
   border-radius: 50%;
   width: 8px;
   height: 8px;
