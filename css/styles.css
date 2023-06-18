@@ -644,6 +644,10 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   border: none;
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--white-color);
 }
 
