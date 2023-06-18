@@ -644,11 +644,11 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   border: none;
-  fill: #ffffff;
+  fill: var(--white-color);
 }
 
 .modal-icon {
-  fill: var(--border-color);
+  fill: var(--valhalla-color);
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -660,3 +660,7 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
+/* <symbol id="icon-icon-menu" viewBox="0 0 47 32">
+      <path d="M-.221 2.077c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961A2.182 2.182 0 0 1-.221 2.077zm0 13.538c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961a2.182 2.182 0 0 1-2.182-2.182zm0 13.539c0-1.205.977-2.182 2.182-2.182h42.965a2.182 2.182 0 0 1 0 4.364H1.961a2.182 2.182 0 0 1-2.182-2.182z"/>
+    </symbol> */
